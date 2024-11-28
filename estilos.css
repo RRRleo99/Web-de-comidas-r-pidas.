@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofadi+One&display=swap');
+/*cdn */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: orange;
+    font-family: cursive;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+.logo{
+    /* background-color: blueviolet; */
+    /* float: left; */
+}
+
+.logo span{
+    color: #000;
+}
+
+/* .logo img{
+    height: 40px;
+} */
+
+.barra{
+    /* background-color: cadetblue; */
+    /* float: right; */
+}
+
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.barra a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.barra a:hover{
+    color: #000; /*pasamos el mouse y le da otro color*/
+}
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: #333;
+    background-image: url(img/pizza1.jpg);
+    background-size: cover;/*cubra el total de la img que quede bien en el main*/
+    background-position: left;
+    display: flex;
+    justify-content: flex-end;/*se posiciona a la derecha el main */
+    align-items: flex-start;/*se posiona en la parte derecha superior y con bordes bien definidos*/
+    text-decoration: none;
+}
+
+.call{
+    color: #fff;
+    width: 60%;/*ancho*/
+    border: 3px solid orange;
+    padding: 30px;/*se encuadra el main mejor opcional*/
+}
+h1{
+    color: orange;
+}
+
+.call p{
+    margin-bottom: 20px;
+}
+
+.call a{
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.call a:hover{
+    background-color: #333;
+}
+
+h2{
+    background-color: orange;/**/
+    text-align: center;/
+    text-transform: uppercase;/*todo a mayus*/
+    padding: 20px; 
+}
+.seccion{
+    height: 650px;/*altura a la seccion*/
+    background-color: #333; /* color a la seccion*/
+}
+section{
+    display: flex;/*Las cajas se ponen uno al lado del otro*/
+    flex-direction: row;/*se ponen en fila las cajas*/
+    flex-wrap: wrap-reverse;/*cuando achicamos de pantalla las cajas tambien, pero con esto las cajas se van acomodando hacia abajo*/
+    flex-flow: row wrap;/*en una sola linea*/
+    justify-content: space-evenly;/*deja espacios con las mismas medidas en cada espacio*/
+    align-items: center;/*centrado al medio*/
+    align-content: center;/*todo el contenido centrado*/
+
+
+}
+
+.caja{
+    height: 120px;
+    width: 120px;
+    background-color: orange;
+    border:2px solid #fff;
+
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer .redes-footer a{ /*aca damos los links de redes que vienen por defectos*/
+    color: orange;
+    text-decoration: none;
+    font-size: 50px;
+    letter-spacing: 10px; /*separacion de letras, se separan los iconos*/
+}
+
+.subir{
+    height: 40px;/*alt*/
+    width: 40px;/*anch*/
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    position: fixed;/*fija la posicion*/
+    bottom: 40px;/*es para poner el boton en la parte de abajo*/
+    right: 40px;/*es para poner el boton en la parte de abajo a la derecha con esas dimensiones*/
+    line-height: 40px;/*linea de altura*/
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px 5px #fff; /*box para la caja, 0 para hori o verti, 5 de desenfoque y 5 de propagacion y blanco*/
+}
